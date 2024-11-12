@@ -3,14 +3,14 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import carteRed from './img/cartebank.png'
 import carteBlack from './img/carte.png'
-import card1 from "../img/Carte_prepaid.jpg"
-import card2 from "../img/Carte_credit.jpg"
-import card3 from "../img/Carte_classique.jpg"
-import card4 from "../img/Carte_gold.jpg"
-import card5 from "../img/Carte_Platinuim.jpg"
-import card6 from "../img/Carte_infinite.jpg"
-import card7 from "../img/world-elite-front.webp"
-import card8 from "../img/equity-bcdc_mastercard-classic-debit-cards_page_1.webp"
+import card1 from "../img/Ms_prepaid.jpg"
+import card2 from "../img/Ms_credit.jpg"
+import card3 from "../img/visa_classic.jpg"
+import card4 from "../img/visa_gold.jpg"
+import card5 from "../img/visa_platinum.jpg"
+import card6 from "../img/visa_infinite.jpg"
+import card7 from "../img/MS_debit.jpg"
+import card8 from "../img/MS_debit.jpg"
 import { Dialog } from '@headlessui/react'
 export default function CarteBancaire() {
 
@@ -29,7 +29,7 @@ export default function CarteBancaire() {
     const [shadow, setShadow] = useState('none')
     useEffect(() => {
       function HideShadow() {
-        if (loginOpen || loginOpen1 || loginOpen2 || loginOpen3 || loginOpen4 || loginOpen5 || loginOpen6 || loginOpen7) {
+        if (loginOpen || loginOpen1 || loginOpen2 || loginOpen3 || loginOpen4 || loginOpen5 || loginOpen6 || loginOpen7 || loginOpen8 || loginOpen9) {
           setShadow('');
         } else {
           setShadow('none');
@@ -247,13 +247,13 @@ export default function CarteBancaire() {
           <p className='bg-[#a22a2b] text-center text-[30px] rounded-t-[14px]  w-full py-3 text-white'>Mastercard prépayée</p>
          
           <div className='px-[5vw] py-[2vw] text-black '>
-                <p>- Prix : 10 USD + <span className='font-bold'>TVA 16%</span></p>
-                <p>- Très flexible pour les transactions internet</p>
-                <p>- Frais de recharge 1% min 1.5$ + <span className='font-bold'>TVA 16%</span></p>
-                <p>- 1%+TVA en local et 1.2% à l’étranger limite 5000 USD</p>
-                <p>- Lier à un pool account</p>
-                <p>- Limite dépôt 5000 USD / jour</p>
-                <p>- Limite journalière retrait 2500 USD</p>
+
+              <p>- Prix : 10 USD + <span className='font-bold'>TVA 16%</span></p>
+              <p>- Limite journalière retrait : 2500 USD</p>
+              <p>- Limite dépôt : 5000 USD / jour</p>
+              <p>- Frais de retrait : 3 % + <span className='font-bold'>TVA 16%</span></p>
+              <p>- RSC : 0.2 %</p>
+
           </div>
           <div>
 
@@ -281,9 +281,12 @@ export default function CarteBancaire() {
          
           <div className='px-[5vw] py-[2vw] text-black '>
 
-                <p>- Prix de la carte : 50 USD + <span className='font-bold'>TVA 16%</span></p>
-                <p>- Client cible : Client entrepreneur</p>
-                <p>- Frais de retrait : DAB/GAB EBCDC : 2,5 % du montant retiré +16% TVA, minimum 5 USD</p>
+          <p>- Prix : 50 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 5000 USD</p>
+          <p>- Frais de retrait : 3 % + <span className='font-bold'>TVA 16%</span></p>
+          <p>- La limite de la carte de crédit correspond au montant du crédit octroyé.</p>
+          <p>- RSC : 0.2 %</p>
+          <p>Le client peut demander une limite supérieure à 5000 USD</p>
 
           </div>
           <div>
@@ -312,9 +315,11 @@ export default function CarteBancaire() {
          
           <div className='px-[5vw] py-[2vw] text-black '>
 
-                <p>- Prix 30 USD + <span className='font-bold'>TVA 16 % 4.8 USD</span></p>
-                <p>- Limite journalière : 2500 USD</p>
-                <p>- Paiement en ligne limite : 4500 USD</p>
+          <p>- Prix : 30 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 2500 USD</p>
+          <p>- Limite par paiement : 4500 USD</p>
+          <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+          <p>- RSC : 0.2 %</p>
           </div>
           <div>
 
@@ -342,9 +347,12 @@ export default function CarteBancaire() {
          
           <div className='px-[5vw] py-[2vw] text-black '>
 
-                <p>- •	Prix 75 USD + <span className='font-bold'>TVA 16 % 12 USD</span></p>
-                <p>- Limite journalière : 5000 USD, plus 9900 USD sur demande du client </p>
-                <p>- Paiement en ligne limite : 7500 USD ou plus sur demande du client</p>
+          <p>- Prix : 75 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 5000 USD</p>
+          <p>- Limite par paiement : 7500 USD</p>
+          <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+          <p>- RSC : 0.2 %</p>
+          <p>Le client peut demander une limite supérieure à 5000 et 7500 USD </p>
 
           </div>
           <div>
@@ -373,13 +381,13 @@ export default function CarteBancaire() {
          
           <div className='px-[5vw] py-[2vw] text-black '>
 
-            <p>- Prix 150 USD + <span className='font-bold'>TVA 16 % 24 USD</span></p>
-            <p>- Limite journalière : 5000 USD, plus 9900 USD sur demande du client </p>
-            <p>- Paiement en ligne limite : 15000 USD, plus sur la demande du client</p>
-            {/* <p>- Remplacement carte en cas de vol ou perte</p>
-            <p>- Dépannage en cash</p>
-            <p>- Assistance médical</p>
-            <p>- Assistance juridique</p> */}
+          <p>- Prix : 150 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 5000 USD</p>
+          <p>- Limite par paiement : 15000 USD</p>
+          <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+          <p>- RSC : 0.2 %</p>
+          <p>Le client peut demander une limite supérieure à 5000 et 15000 USD</p>
+
           </div>
           <div>
 
@@ -408,13 +416,12 @@ export default function CarteBancaire() {
           <div className='px-[5vw] py-[2vw] text-black '>
 
      
-                <p>- Prix : 150 USD + <span className='font-bold'>TVA 16%</span></p>
-                <p>- Cible : segment fortuné, revenus élevés, voyage fréquemment, dépenses modérées</p>
-                <p>- Limite journalière retrait 5000 USD et paiement 7500 USD</p>
-                <p>- Remplacement carte en cas de vol ou perte</p>
-                <p>- Dépannage en cash</p>
-                <p>- Assistance médical</p>
-                <p>- Assistance juridique</p>
+          <p>- Prix : 300 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 9900 USD</p>
+          <p>- Limite par paiement : 15000 USD</p>
+          <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+          <p>- RSC : 0.2 %</p>
+          <p>- Le client peut demander une limite supérieure à 9900 et 15000 USD</p>
 
           </div>
           <div>
@@ -444,13 +451,12 @@ export default function CarteBancaire() {
           <div className='px-[5vw] py-[2vw] text-black '>
 
      
-                <p>- Prix 350 USD + <span className='font-bold'>TVA 16 % 56 USD </span></p>
-                <p>- Limite journalière : 9900 USD y compris le frais</p>
-                <p>- Paiement en ligne limite : 15000 USD, plus sur la demande du client</p>
-                {/* <p>- Remplacement carte en cas de vol ou perte</p>
-                <p>- Dépannage en cash</p>
-                <p>- Assistance médical</p>
-                <p>- Assistance juridique</p> */}
+          <p>- Prix : 350 USD + <span className='font-bold'>TVA 16%</span></p>
+          <p>- Limite journalière retrait : 9900 USD</p>
+          <p>- Limite paiement : 15000 USD</p>
+          <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+          <p>- RSC : 0.2 %</p>
+          <p>Le client peut demander une limite supérieure à 15000 USD</p>
 
           </div>
           <div>
@@ -480,13 +486,11 @@ export default function CarteBancaire() {
           <div className='px-[5vw] py-[2vw] text-black '>
 
      
-                <p>- Prix 30 USD + <span className='font-bold'>TVA 16 % 4.8 USD </span></p>
-                <p>- Limite journalière : 1500 USD y compris le frais </p>
-                <p>- Paiement en ligne limite : 4500 USD y compris les frais de retrait</p>
-                {/* <p>- Remplacement carte en cas de vol ou perte</p>
-                <p>- Dépannage en cash</p>
-                <p>- Assistance médical</p>
-                <p>- Assistance juridique</p> */}
+              <p>- Prix de la carte : 30 USD + <span className='font-bold'>TVA 16%</span></p>
+              <p>- Limite journalière retrait : 2500 USD</p>
+              <p>- Paiement en ligne : 3500 USD</p>
+              <p>- Frais de retrait : 3 % du montant + <span className='font-bold'>TVA 16%</span></p>
+              <p>- RSC : 0.2 %</p>
 
           </div>
           <div>
